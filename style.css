@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Phudu:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&family=Shadows+Into+Light&display=swap');
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Phudu', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Shadows Into Light', cursive;
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary: #b7ab98;
+  --secondary: #a7445e;
+  --background: #212121;
+  --layer: #2e2e2e;
+  --layer-2: #5d5d5d;
+  --error: #cf6679;
+  --text: #ebebeb;
+  --text-2: #ababab;
+}
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  cursor: none;
+}
+h1{
+  font-family: 'Bebas Neue', sans-serif;
+}
+.logo{
+  position: fixed;
+  top: 10px;
+  left: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--layer);
+  transition: 0.2s ease;
+  font-family: 'Satisfy', cursive;
+}
+.logo:hover{
+  color: var(--text-2);
+}
+.cursor{
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--text);
+  border-radius: 50%;
+  z-index: 20;
+  pointer-events: none;
+  transform: translateX(calc(50vw - 15px)) translateY(90vh);
+}
+.ball{
+  position: fixed;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--text);
+  z-index: 20;
+  pointer-events: none;
+  transform: translateX(calc(50vw - 3.5px)) translateY(calc(90vh + 11.5px));
+  transition: 0.1s ease;
+}
